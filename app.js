@@ -54,7 +54,7 @@ const createSlider = () => {
     alert('Select at least 2 image.')
     return;
   }
-  // crate slider previous next area
+  // create slider previous next area
   sliderContainer.innerHTML = '';
   const prevNext = document.createElement('div');
   prevNext.className = "prev-next d-flex w-100 justify-content-between align-items-center";
@@ -68,7 +68,6 @@ const createSlider = () => {
   // hide image aria
   imagesArea.style.display = 'none';
   const duration = document.getElementById('duration').value || 1000;
-  console.log(duration)
   sliders.forEach(slide => {
     let item = document.createElement('div')
     item.className = "slider-item";
